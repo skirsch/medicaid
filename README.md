@@ -8,7 +8,6 @@ This only took me about 5 minutes to do.
 AI suggested the codes to look at:
 https://alter.systems/p/ad91141f-34cd-44a5-8e10-6761e5b7d113
 
-
 Isn't it nice to have transparency?
 
 See the AI link for the anlysis of the two highest curves.
