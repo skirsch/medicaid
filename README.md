@@ -24,7 +24,7 @@ https://x.com/stkirsch/status/2022576525955285173?s=20
 See the .xlsx file for the live plot.
 
 ## Full analysis file
-`analyze.py` produces `analysis_output.csv`
+`analyze.py` produces the output imported into `analysis.xlsx`
 
 ## About the HHS dataset
 The HHS data can be downloaded here: https://opendata.hhs.gov/
