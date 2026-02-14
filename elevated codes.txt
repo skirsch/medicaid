@@ -1,0 +1,62 @@
+99443 – Telephone evaluation and management service, 21–30 min (telehealth follow‑up).
+D9995 – Teledentistry synchronous (real‑time) encounter.
+D1999 – Unspecified preventive dental procedure, used for miscellaneous documentation.
+0517 – CPT/Medicare facility charge for Ophthalmological procedure level 3 (wrapped OPPS code).
+99442 – Telephone E/M, 11–20 min duration.
+G9916 – Quality measure reporting for preventive care screening compliance.
+L3480 – Orthotic component replacement (ankle / foot support part).
+Z6200 – Social‑service assessment or family function support under Medicaid community codes.
+Z6402 – Counseling / social‑support service for family stress or long‑term care needs.
+D0391 – Interpretation of diagnostic image by dental provider (2D/3D image).
+0561 – Comprehensive clinic visit or intermediate evaluation service (code group for facility billing).
+J1790 – Injection, droperidol (antiemetic / sedative use).
+G9807 – Quality indicator code for hypertension or cardiac risk measure met.
+Z6300 – Medicaid social service case‑management encounter.
+87532 – Infectious disease DNA/RNA amplification (e.g., HCV quantitation).
+W0137 – Repair or maintenance of mobility assist equipment, per 15 minutes.
+96574 – Chemotherapy administration within an immune modulating regimen, subcutaneous.
+36465 – Blood collection via venipuncture using vein imaging device.
+81099 – Unlisted urinalysis procedure (custom non‑panel test).
+82016 – Quantitative enzyme assay of glucose or similar metabolic analyte.
+82128 – Enzyme assay for ammonia or organic acid metabolic disorders.
+W1760 – Replacement or repair of patient transfer device (lift motor parts).
+87471 – Infectious agent detection by nucleic acid probe (viral test method).
+G9458 – Quality reporting code related to stroke or thrombosis risk management.
+W1793 – Repair and maintenance of patient‑transfer system (per 15 min).
+98968 – Telephone / digital communication with established patient (21–30 min).
+88325 – Pathology consultation comprehensive including special stains.
+G9016 – Targeted case‑management service for high‑risk Medicaid beneficiaries.
+0821 – Hospital outpatient procedure code set charge indicator (O/P visit type).
+G9512 – Quality‑measure reporting for chronic care management.
+G0499 – Comprehensive Home Health care assessment and planning encounter.
+D9992 – Dental case management care coordination service.
+4322F – Physician Quality Reporting indicator for documentation of exam.
+4058F – PQRS indicator – blood pressure measurement documented.
+J1729 – Injection, hydrocortisone sodium succinate (adrenal steroid).
+3088F – PQRS indicator – patient risk assessment performed.
+G9793 – Quality metric – screening performed or result documented.
+99441 – Telephone E/M, 5–10 min service (telehealth encounter).
+96912 – Photochemotherapy or UV‑light therapy procedure.
+C1889 – Implantable medical device component, not otherwise classified.
+36466 – Venipuncture collection for multiple sequential samples.
+4056F – PQRS indicator – blood pressure reading recorded.
+0771 – Hospital outpatient facility code for drug administration or injection visit.
+90868 – Transcranial magnetic stimulation treatment, per session.
+G9818 – Quality report – patient received follow‑up communication.
+84143 – Laboratory test – thyroid‑stimulating hormone (quantitative).
+4060F – PQRS indicator – BP control achieved / within range.
+87498 – Detection of infectious agent by nucleic acid (qualitative PCR).
+87551 – DNA/RNA detection for infectious disease by amplified probe technique.
+G9904 – Quality report – appropriate care delivery confirmed.
+4340F – PQRS indicator – cholesterol / lipid profile checked.
+P9045 – Transfusion service – whole blood per unit.
+37225 – Peripheral arterial angioplasty with stent placement.
+G9716 – Quality metric – telehealth service provided and documented.
+K0553 – Battery / power supply for home ventilator or wheelchair device.
+87634 – COVID‑19 or other viral PCR multiplex panel (amp probe method).
+15783 – Surgical procedure, adjacent‑tissue transfer – nose/lip/eyelid.
+81445 – Targeted gene sequence panel for oncologic or inherited disease testing.
+87561 – Viral DNA /RNA amplified probe testing (method quantitative).
+98961 – Education and training by qualified health professional (2‑4 patients group).
+W1759 – Repair / maintenance of home medical equipment per 15 min.
+87582 – Infectious agent detection by amplified probe technique (other virus).
