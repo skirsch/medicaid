@@ -20,5 +20,7 @@ I wonder what could cause such massive harm??? Baffling!!
 
 I don't think they will EVER figure this out, will they?
 
-My twitter post:
+My X post shows the graph:
 https://x.com/stkirsch/status/2022576525955285173?s=20
+
+See the .xlsx file for the live plot.
