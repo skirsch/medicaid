@@ -24,7 +24,7 @@ https://x.com/stkirsch/status/2022576525955285173?s=20
 See the .xlsx file for the live plot.
 
 ## Full analysis file
-`analyze.py` produces the output imported into `analysis.xlsx`
+`analyze.py` produces the output imported into `analysis.xlsx` (i've removed lines with 0 counts in 2021 to make it smaller). `csv` file as well.
 
 ## About the HHS dataset
 The HHS data can be downloaded here: https://opendata.hhs.gov/
@@ -49,3 +49,43 @@ The HCPCS code field includes Level 1, Level 2, ICD10 & Revenue Codes apparently
 A0426 is abulance transport non-emergency. It's flat.
 A0427 is 911 call. it's up and hasn't returned to baseline
 A0433 is is extreme emergeny. Highest‑level paramedic care — multiple IVs, drug injection, advanced airway. These calls are way up and haven't returned to baseline.
+
+# About the codes of interest
+
+These are procedure codes, not ICD10 codes. So this is what they did, not what you have.
+
+Jxxxx
+J9022, J1955
+Injection/biologic administered
+⚠️ High (potential inoculation itself)
+
+
+86xxx / 82xxx
+86022, 86612, 82373
+Immune/antibody testing
+⚠️ Moderate–High
+
+
+93xxx (cardiac)
+93786, 93788, 93662
+Cardiac monitoring
+⚠️ Moderate–High (myocarditis)
+
+
+G04xx / G03xx
+G0495, G0496, G0329
+Telehealth, care coordination
+⚠️ Moderate
+
+
+Mxxxx
+M0150, M0152
+OASIS admin
+❌ None
+
+
+V, L, D codes
+V2206, L0633, D3348
+Prosthetics / vision / dental
+❌ None
+
