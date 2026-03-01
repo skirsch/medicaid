@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Analyze Medicaid provider spending by HCPCS_CODE and quarter.
-Output: one row per (HCPCS_CODE, type) with quarterly sums.
+Analyze Medicaid provider spending by HCPCS_CODE and month.
+Output: one row per (HCPCS_CODE, type) with monthly sums.
 type: "b" = unique beneficiaries, "e" = events (claims), "s" = spending
 """
 
@@ -10,18 +10,12 @@ import pandas as pd
 INPUT_FILE = "medicaid-provider-spending.csv"
 OUTPUT_FILE = "analysis_output.csv"
 
-# Quarters from Q1 2018 through Q4 2024
-QUARTERS = [
-    f"Q{q}_{y}"
+# Months from 2018-01 through 2024-12
+MONTHS = [
+    f"{y}-{m:02d}"
     for y in range(2018, 2025)
-    for q in range(1, 5)
+    for m in range(1, 13)
 ]
-
-def month_to_quarter(month_str: str) -> str:
-    """Convert YYYY-MM to Qn_YYYY."""
-    year, month = map(int, month_str.split("-"))
-    q = (month - 1) // 3 + 1
-    return f"Q{q}_{year}"
 
 def main():
     print("Reading data...")
@@ -32,11 +26,10 @@ def main():
         low_memory=False,
     )
 
-    print("Aggregating by code and quarter...")
-    df["quarter"] = df["CLAIM_FROM_MONTH"].apply(month_to_quarter)
-    df = df[df["quarter"].isin(QUARTERS)]
+    print("Aggregating by code and month...")
+    df = df[df["CLAIM_FROM_MONTH"].isin(MONTHS)]
 
-    g = df.groupby(["HCPCS_CODE", "quarter"]).agg(
+    g = df.groupby(["HCPCS_CODE", "CLAIM_FROM_MONTH"]).agg(
         beneficiaries=("TOTAL_UNIQUE_BENEFICIARIES", "sum"),
         events=("TOTAL_CLAIMS", "sum"),
         spending=("TOTAL_PAID", "sum"),
@@ -46,14 +39,14 @@ def main():
     codes = g["HCPCS_CODE"].unique()
     out_rows = []
     for code in sorted(codes):
-        sub = g[g["HCPCS_CODE"] == code].set_index("quarter")
+        sub = g[g["HCPCS_CODE"] == code].set_index("CLAIM_FROM_MONTH")
         for t, col in [("b", "beneficiaries"), ("e", "events"), ("s", "spending")]:
             row = {"HCPCS_CODE": code, "type": t}
-            for q in QUARTERS:
-                row[q] = sub.loc[q, col] if q in sub.index else 0
+            for m in MONTHS:
+                row[m] = sub.loc[m, col] if m in sub.index else 0
             out_rows.append(row)
 
-    df = pd.DataFrame(out_rows, columns=["HCPCS_CODE", "type"] + QUARTERS)
+    df = pd.DataFrame(out_rows, columns=["HCPCS_CODE", "type"] + MONTHS)
     df.to_csv(OUTPUT_FILE, index=False)
     print(f"Wrote {len(df)} rows to {OUTPUT_FILE}")
     print(df.head(10).to_string())
